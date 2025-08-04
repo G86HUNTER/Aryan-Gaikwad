@@ -1,0 +1,126 @@
+: <!DOCTYPE html>
+<html>
+ <head>
+ <title>TEAM SAARTHI</title>
+ <style>
+ body {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, sans-serif;
+ color: white;
+ background: black;
+ overflow-x: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ flex-direction: column;
+ }
+ /* Background video styling */
+ .background-video {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ z-index: -1;
+ }
+ .video-container video {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+ .container {
+ background: rgba(0, 0, 0, 0.8);
+ padding: 30px;
+ border-radius: 10px;
+ text-align: center;
+ width: 50%;
+ box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+ position: relative;
+ z-index: 1;
+ }
+ h1, h2 {
+ color: lightblue;
+ }
+ form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ }
+ input, textarea {
+ width: 80%;
+ padding: 10px;
+ margin: 10px 0;
+ border: none;
+ border-radius: 5px;
+ }
+ button {
+ background: lightblue;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 16px;
+ }
+ button:hover {
+ background: cyan;
+ }
+ </style>
+ </head>
+ <body>
+ <!-- Background video -->
+ <video class="background-video" autoplay muted loop>
+ <source src="C:\Users\Admin\Videos\Recording imp.mp4" />
+ Your browser does not support the video tag.
+ </video>
+ </div>
+ <div class="container">
+ <h1>TEAM SAARTHI !!!</h1>
+ <div id="dynamic-message"></div>
+
+ <!-- Success Story Submission Form -->
+ <h2>Submit Your Success Story</h2>
+ <form id="success-form">
+ <label for="name">Name:</label>
+ <input type="text" id="name" required>
+ <br>
+ <label for="email">Email:</label>
+ <input type="email" id="email" required>
+ <br>
+ <label for="story">Your Story:</label>
+ <textarea id="story" required></textarea>
+ <br>
+ <button type="C:\Users\Admin\Documents\sarthi web 1 dublicate chatgpt.html">Submit</button>
+ </form>
+ </div>
+ <!-- jQuery and JavaScript -->
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+ <script>
+ $(document).ready(function () {
+ // Dynamic Greeting Message
+ const hours = new Date().getHours();
+ const greeting = hours < 12 ? 'Good Morning!' : hours < 18 ? 'Good Afternoon!' : 'Good
+Evening!';
+ $('#dynamic-message').text(`${greeting} Welcome to Saarthi!`);
+ // Form Submission
+ $('#success-form').submit(function (event) {
+ event.preventDefault();
+ let name = $('#name').val().trim();
+ let email = $('#email').val().trim();
+ let story = $('#story').val().trim();
+ if (name === "" || email === "" || story === "") {
+ alert("All fields are required!");
+ return;
+ }
+ // Show alert and then redirect
+ alert(`Success story submitted!\n\nName: ${name}\nEmail: ${email}\nStory: ${story}`);
+ // Redirecting to the provided website
+ window.location.href = "C:/Users/HP/OneDrive/Documents/WD HTMLSaarthiWEB.html";
+// Replace with your actual URL
+ });
+ });
+ </script>
+ </body>
+</html>
